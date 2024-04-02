@@ -1,0 +1,3 @@
+﻿  main.c
+main.obj : error LNK2019: unresolved external symbol _stencil_1d referenced in function _main
+D:\Downloads\CSNETWK-MP-main\MP2\LBYARCH_MP2\Debug\LBYARCH_MP2.exe : fatal error LNK1120: 1 unresolved externals
