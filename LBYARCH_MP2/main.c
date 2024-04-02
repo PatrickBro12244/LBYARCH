@@ -1,3 +1,6 @@
+//Kyle Patrick Roland M Francisco
+//Luis Rafayel Jaime
+//SS1
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -23,10 +26,9 @@ void display_first_ten(const char* name, int n, double* vector) {
 }
 
 int main() {
-    int min_exponent = 20; // Minimum exponent for vector size (2^20)
-    int max_exponent = 30; // Maximum exponent for vector size (2^30)
+    int min_exponent = 20;
+    int max_exponent = 30; 
 
-    // Seed the random number generator
     srand((unsigned int)time(NULL));
 
 
@@ -38,7 +40,6 @@ int main() {
 
         
 
-        // Dynamically allocate memory for X and Y
         if (n >= 3) {
             X = (double*)malloc(n * sizeof(double));
             Y = (double*)malloc((n - 3) * sizeof(double));
@@ -50,14 +51,13 @@ int main() {
 
         if (X == NULL || Y == NULL) {
             printf("Memory allocation failed\n");
-            if (X) free(X); // Free allocated memory if X was allocated
-            if (Y) free(Y); // Free allocated memory if Y was allocated
-            return 1; // Return error code
+            if (X) free(X); 
+            if (Y) free(Y); 
+            return 1;
         }
 
-        // Initialize the first ten elements of X with random integer values
         for (int j = 0; j < 10; ++j) {
-            X[j] = (double)(rand() % 100); // Random integer value between 0 and 99
+            X[j] = (double)(rand() % 100);
         }
 
         // Initialize the rest of X with consecutive values
@@ -96,7 +96,7 @@ int main() {
         printf("Time taken for Assembly stencil operation with n = %d (seconds): %f\n\n\n", n, cpu_time_used);
 
         // Free allocated memory
-        free(X);
+        free(X);    
         free(Y);
 
     }

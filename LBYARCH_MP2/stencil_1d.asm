@@ -1,3 +1,5 @@
+;Kyle Patrick Roland M. Francisco
+;SS1
 section .data
     format_msg1 db "Assembly function stencil_1d is called", 10, 0
     format_msg2 db "n = %ld, X = %p, Y_asm = %p", 10, 0
