@@ -1,4 +1,4 @@
-Kyle Patrick Roland M. Francisco
+Kyle Patrick Roland M. Francisco &
 Luis Jaime Rafayel
 # 1-D stencil of vector X in vector Y
 
